@@ -1,4 +1,6 @@
-﻿namespace TestLib
+﻿using System;
+
+namespace TestLib
 {
     public class Calculations
     {
@@ -51,6 +53,12 @@
                         continue;
                     }
                 }
+
+                if (start > endWorkingTime)
+                {
+                    break;
+                }
+
                 expectedPeriods.Add(new(start, next));
                 start = next;
             }

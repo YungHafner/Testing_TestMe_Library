@@ -75,7 +75,7 @@ namespace TestProjectV1
         }
 
         [Test]
-        public void Test_Comparison_Of_Incoming_And_Outgoing_Parameters_30Min_Edit_Durations_And_Start_Times()
+        public void Test_Comparison_Of_Incoming_And_Outgoing_Parameters_30Min_Edited_Durations_And_Start_Times()
         {
             TimeSpan[] startTimes = new System.TimeSpan[] 
             { 

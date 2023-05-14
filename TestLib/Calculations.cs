@@ -47,7 +47,9 @@ namespace TestLib
                     if (next >= busyTime)
                     {
                         if (start < busyTime && busyTime - start >= consultTimeSpan)
+                        {
                             expectedPeriods.Add(new(start, busyTime));
+                        }
                         var time = queue.Dequeue();
                         start = time.Item1.Add(TimeSpan.FromMinutes(time.Item2));
                         continue;
